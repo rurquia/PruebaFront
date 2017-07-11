@@ -1,0 +1,21 @@
+<header>
+	<h1 ng-bind="detail.person.name + ' ' + detail.person.surname"></h1>
+</header>
+<ul class="datos">
+	<li class="dato">
+		<b class="tipo">ID</b>
+		<span ng-bind="detail.person.id"></span>
+	</li>
+	<li class="dato">
+		<b class="tipo">DIRECCION</b>
+		<span ng-bind="detail.person.address.street +', '+detail.person.address.city"></span>
+	</li>
+	<li class="dato">
+		<b class="tipo">EDAD</b>
+		<span ng-bind="detail.person.age"></span>
+	</li>
+	<li class="dato">
+		<b class="tipo">DESCRIPCION</b>
+		<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
+	</li>
+</ul>

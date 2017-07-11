@@ -26,6 +26,11 @@ angular.module('app').config(function ($routeProvider) {
         controller: 'MainCtrl',
         controllerAs: 'main'
     })
+    .when('/detail/:id', {
+        templateUrl: 'views/detail.html',
+        controller: 'DetailCtrl',
+        controllerAs: 'detail'
+    })
     .otherwise({
         redirectTo: '/'
     });

@@ -1,1 +1,12 @@
-This is the main view
+<header>
+	<h1>PRUEBA FRONT</h1>
+</header>
+<ul class="personas">
+	<li class="persona" ng-repeat="person in main.people">
+		<a ng-href="#!/detail/{{person.id}}">
+			<div class="nombre" ng-bind="person.name + ' ' +  person.surname"></div>
+			<div class="id" ng-bind="person.id"></div>
+			<div class="direccion" ng-bind="person.address.street +', '+person.address.city"></div>
+		</a>
+	</li>
+</ul>
